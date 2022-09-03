@@ -159,6 +159,7 @@ main{
     border-top: 0.1rem solid #ebebeb; 
     padding: 1.5rem;
     background-color: white;
+    position: relative;
 }
 
 .containerCard{
@@ -271,15 +272,21 @@ display: flex;
     background-color: #FFF;
     border-radius: 50%;
     position: absolute;
-    right: 45px;
-    /* top: -15px; */
+    right: 25px;
+    top: -15px; 
 }
 
 
+/* Ejercitación clase */
 
+/* header{
+    position: fixed;
+    top: 0;
+}
 
-
-
+main{
+    margin-top: 20%;
+} */
 
 
 

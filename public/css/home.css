@@ -1,0 +1,291 @@
+ /*hace referencia a nuestro html, para declarar variables en css*/
+:root {  
+    --primary-color: #eac926;
+    --color-azul: #03264c;
+    --color-celeste: #1259c3;
+    --color-grisOscuro: #666;
+    --color-grisClaro: #ebebeb;
+    --color-verde: #39b54a;
+    --family: 'Roboto', 'sans-serif';
+    --cuerpo-texto: 1.2rem;
+    --titulares-texto: 2.4rem;
+    --precios-texto: 1.8rem;
+    --descuentos-texto: 1.6rem;
+    --descripciones-texto: 1.6rem;
+}  
+
+* {
+    /*para q no se añada el padding y el border de mas y no genere scroll*/
+    box-sizing: border-box;     
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    /*esto es para que un rem equivale a 1.0; 1rem= 10px; 1.8rem= 18px;*/
+    font-size: 62.5%; 
+    font-family: var(--family);  
+}
+
+header{
+    background-color: var(--primary-color);
+}
+
+.logoContainer{
+    width: 70%;
+    height: 70%;
+    padding-top:4.0rem;
+    margin: 0 auto;
+}
+
+.barra{
+    height: 3.0rem;
+    width: 80%;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    font-size: var(--descripciones-texto);
+    text-align: left;
+    color: #666;
+    padding: auto;
+}
+
+.barraContainer{
+    display: flex;
+    font-family: var(--family);
+}
+
+.lupa{
+    width: 8%;
+    height: 8%;
+    padding-top:1.5rem;
+    font-size: 20px;
+}
+
+.comprasCuotas{
+    display: flex;
+    width: 100vw;
+    margin-top: 1.5rem;
+}
+
+.comprasCuotas p{
+    font-size: var(--cuerpo-texto);
+    text-align: center;
+}
+
+.iconoCompras{
+    width: 2.0rem;
+    height: 2.0rem;
+    margin-left: 6.0rem;
+    font-size: 20px;
+}
+
+.navBar{
+    margin-top: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: var(--cuerpo-texto);  
+}
+
+.navBar2{
+    margin-top: 1.5rem;
+}
+
+.iconLista{
+    display: flex;
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-celeste);
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem; /*aumenta el tamaño de la imagen*/
+    color: var(--color-grisClaro);
+    text-align:center;
+}
+
+.banner{
+    width: 100%;
+}
+
+.pagoTarjeta{
+    margin-top: 2rem;
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+footer{
+    background-color: white;
+}
+
+.fa-credit-card{
+    margin-top:2rem;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-celeste)
+}
+
+.pagoTarjeta h2{
+    font-size: var(--precios-texto);
+    color: var(--color-grisOscuro);
+}
+
+.pagoTarjeta p{
+    font-size: var(--cuerpo-texto);
+    color: rgb(143, 141, 141);
+    font-weight: bold;
+}
+
+.fa-gift {
+    font-size: 3.5rem;
+    color: var(--color-celeste);
+}
+
+.fa-user-shield{
+    font-size: 3.5rem;
+    color: var(--color-celeste);
+}
+
+main{
+    margin: 0 auto;
+    width: 100%;
+    background-color: var(--color-grisClaro);
+}
+.card{
+    margin-bottom: 1rem;
+    border-top: 0.1rem solid #ebebeb; 
+    padding: 1.5rem;
+    background-color: white;
+}
+
+.containerCard{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cardImg img{
+    width: 100%;
+}
+
+.cardImg{
+    margin: 0 auto;
+}
+
+.fa-truck{
+    border: 0.1rem solid var(--color-verde);
+    border-radius: 50%;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.fa-truck, .porcentaje{
+    color: var(--color-verde);
+}
+
+.porcentaje{
+    font-size: 16px;
+    width: 70%;
+}
+
+.priceCard{
+display: flex;
+}
+
+.price{
+    font-size: var(--precios-texto);
+    width: 30%;
+}
+
+.card h4{
+    font-size: var(--descripciones-texto);
+    margin-top: 1rem;
+    font-weight: normal;
+    color:var(--color-grisOscuro) ;
+}
+
+@media (max-width: 361px){
+    .card h4{
+        display: none;
+    }
+    .navBar, .navBar2{
+        display:none;
+    }
+    .iconLista{
+        margin: 0px auto;
+    }
+    .contenedorlogo{
+        display: flex;
+    }
+}
+
+@media (min-width: 362px){
+    .contenedorlogo{
+        display: flex;
+    }
+    .barraContainer{
+        margin-top: 35px;
+    }
+}
+
+
+@media (min-width: 362px) and (max-width: 769px){
+    .flexcontaine{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cardImg{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 50%;
+
+    }
+    .iconLista{
+        display: none;
+    }
+}
+
+@media(min-width: 770px){
+    .iconLista{
+        display: none;
+    }
+    .flexcontaine{
+        flex-direction: row;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .cardImg{
+        margin: 0 15px;
+        width: 24%;
+    }
+}
+
+.cardImg .card i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 45px;
+    /* top: -15px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

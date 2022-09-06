@@ -189,6 +189,7 @@ main{
 .porcentaje{
     font-size: 16px;
     width: 70%;
+    padding-left: 5%;
 }
 
 .priceCard{
@@ -260,6 +261,9 @@ display: flex;
         margin: 0 15px;
         width: 24%;
     }
+    .porcentaje{
+        padding-left: 5%;
+    }
 }
 
 .cardImg .card i{
@@ -288,8 +292,82 @@ main{
     margin-top: 20%;
 } */
 
+/* ESTILOS - FORMULARIO */
+.contenedor{
+    max-width: 1200px;
+    margin-inline: auto;
+}
+.contenedor-principal {
+    padding-top: 50px;
+}
 
+.user{
+    display: flex;
+    justify-content: space-around;
+}
 
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+.formulario fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.formulario legend {
+    background-color: #005485;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    flex-basis: 100px;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="tel"],
+textarea {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+}
+
+/* ESTILOS LOGIN */
+
+.btn {
+    background-color: #8cbc00;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 10px;
+    transition: background-color .3s ease-out ;
+    text-align: center;
+    border: none;
+}
+
+.btnMargin {
+    margin: 10px;
+}
+
+.btn:hover{
+    background-color: #769c02;
+    cursor: pointer;
+}
 
 
 

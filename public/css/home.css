@@ -201,11 +201,36 @@ display: flex;
     width: 30%;
 }
 
-.card h4{
+/* .card h4{
     font-size: var(--descripciones-texto);
     margin-top: 1rem;
     font-weight: normal;
     color:var(--color-grisOscuro) ;
+    
+} */
+
+.cardImg:hover h4{
+    font-size: var(--descripciones-texto);
+    margin-top: 1rem;
+    font-weight: normal;
+    color:var(--color-grisOscuro) ;
+    display: block;
+}
+
+.cardImg h4{
+    display: none;
+}
+
+.cardImg:hover i{
+    transform: rotate(-90deg);
+}
+
+.cardImg i{
+    transition: 1.5s;
+}
+
+.cardImg:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 @media (max-width: 361px){
@@ -221,7 +246,14 @@ display: flex;
     .contenedorlogo{
         display: flex;
     }
+    .logoContainer{
+        width: 50%;
+    }
+    .barraContainer{
+        width: 50%;
+    }
 }
+
 
 @media (min-width: 362px){
     .contenedorlogo{
@@ -232,8 +264,15 @@ display: flex;
     }
 }
 
+footer i:hover{
+    color: yellow;
+}
+
 
 @media (min-width: 362px) and (max-width: 769px){
+    .contenedorNav{
+        display: flex;
+    }
     .flexcontaine{
         display: flex;
         flex-wrap: wrap;
@@ -263,6 +302,14 @@ display: flex;
     }
     .porcentaje{
         padding-left: 5%;
+    }
+    .foo{
+        display: flex;
+        align-items: center;
+    }
+    .copy{
+        margin-top: 5rem;
+        text-align: center;
     }
 }
 
@@ -365,11 +412,9 @@ textarea {
 }
 
 .btn:hover{
-    background-color: #769c02;
+    background-color: #005485;
     cursor: pointer;
 }
-
-
 
 
 

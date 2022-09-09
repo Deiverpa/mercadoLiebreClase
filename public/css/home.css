@@ -106,6 +106,10 @@ a{
     text-align:center;
 }
 
+ul{
+    list-style: none;
+}
+
 .banner{
     width: 100%;
 }
@@ -245,6 +249,7 @@ display: flex;
     }
     .contenedorlogo{
         display: flex;
+        align-items: center;
     }
     .logoContainer{
         width: 50%;
@@ -285,6 +290,21 @@ footer i:hover{
     .iconLista{
         display: none;
     }
+    nav ul li{
+        padding-left: 5%;
+    }
+    .navBar ul{
+        display: flex;
+        margin-left: 2%;
+    }
+    .navBar2 ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .navBars{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 @media(min-width: 770px){
@@ -310,6 +330,24 @@ footer i:hover{
     .copy{
         margin-top: 5rem;
         text-align: center;
+    }
+    nav ul li{
+        padding-left: 5%;
+    }
+    .navBar ul{
+        display: flex;
+        margin-left: 2%;
+    }
+    .navBar2 ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .navBars{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contenedorNav{
+        display: flex;
     }
 }
 

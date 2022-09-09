@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- <link href="css/normalize.css" rel="stylesheet"> -->
     <title>Document</title>
     <script src="https://kit.fontawesome.com/3a5c03d4d2.js" crossorigin="anonymous"></script>
@@ -17,51 +18,37 @@
 </head>
 
 <body>
-    <header>
-        <div class="contenedorNav">
-        <div class="contenedorlogo">
-        <div class="logoContainer">
-            <img src="images/logo-mercado-liebre.svg" alt=" logo de mercado libre">
+    <header id="header" class="superior">
+        <div class="contenedorLogo">
+        <div class="barrasuperior"> 
+            <div class="logobarra"> 
+        <div  class="logo">
+        <img src="/images/logo-mercado-liebre.svg" alt="logo mercado liebre"> 
         </div>
-        <div class="barraContainer">
-            <button class="barra">Buscar productos, marcas</button>
-            <i class="lupa fas fa-search"></i>
+        <form action="/" method="POST">
+        <p class="barra"> 
+            <input class="buscador" type="search" placeholder="Buscar productos"><i id="icon2"class="fas fa-search"></i></p>
         </div>
-        </div> 
-        <section class="comprasCuotas">
-            <i class="iconoCompras fas fa-hand-holding-usd"></i>
-            <p>Comprá en cuotas y sin tarjeta de credito</p>
-        </section>
+        <p  class="cuotas"><i id="icon" class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
-        <nav class="navBar">
-            <ul>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
+        </form>
+    </div>
+        <nav class="navContainer">
+            <ul class="opciones">
+                <li> <a href="#"> Ofertas </a> </li>
+                <li> <a href="#"> Tiendas oficiales </a> </li>
+                <li> <a href="#"> Vender </a></li>
+                <li> <a href="#"> Ayuda </a></li>
+            </ul>
+            <ul class="opciones">
+                <li> <a href="/register">Creá tu cuenta<i id="icon" class="far fa-id-card"></i></a></li>
+                <li> <a href="/login">Ingresá<i id="icon" class="fas fa-sign-in-alt"></i></a></li>
+                <li> <a href="#">Mis compras<i id="icon" class="fas fa-cart-arrow-down"></i></a></li>
             </ul>
         </nav>
-
-        <nav class="navBar2">
-            <ul>
-                <li>
-                    <a href="/register">Creá tu cuenta</a>
-                    <i class="fa-regular fa-address-card"></i>
-                </li>
-                <li>
-                    <a href="/login">Ingresá</a>
-                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                </li>
-                <li>
-                    <a href="#">Mis compras</a>
-                    <i class="fa-solid fa-basket-shopping"></i>
-                </li>
-            </ul>
-        </nav>
-
-        <section class="iconLista">
-            <i class="fa-solid fa-bars"></i>
-        </section>
+        <div class="burger-menu">
+            <i id="burger"class="fas fa-bars"></i>
+            </div>
     </header>
 
     <section>
